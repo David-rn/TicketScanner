@@ -4,7 +4,7 @@ def main():
 
     model = ocr_predictor(pretrained=True)
     # PDF
-    doc = DocumentFile.from_images("/Users/dredo/Downloads/pizzeria.jpg")
+    doc = DocumentFile.from_images("./scripts/dummy/pizzeria.jpeg")
     # Analyze
     result = model(doc)
     print(result)
